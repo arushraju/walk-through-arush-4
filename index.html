@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Arush's World</title>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+		<style>
+			.sriracha-regular {
+				font-family: "Sriracha", cursive;
+				font-weight: 400;
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--3D Rendering-->
+		<div id="experience-canvas">
+      		<canvas id="experience"></canvas>
+    	</div>
+
+
+		<!--Mobile Controls-->
+		<div class="mobile-controls-button">
+			
+		</div>
+		<div class="mobile-container">
+			<div class="mobile-controls-rotate">
+				<div class="pointer">
+					
+				</div>
+			</div>
+			<div class="mobile-control-forward">
+				
+			</div>
+		</div>
+		<!--Progress Bar-->
+		<div class="progress-bar-container">
+			<label for="progress-bar">Loading...</label>
+			<progress id="progress-bar" value="0" max="100"></progress>
+		</div>
+
+		<!--Pop up-->
+		<div class="pop-up sriracha-regular">
+			<div class="heading item item1">
+				<h1>Hello Freind!</h1>
+			</div>
+			<div class="content item item2">
+				<p>Welcome to my world, where I share my projects and also about me in a way, that makes interesting. Image contains instruction for controls, if you are using the website on a desktop. I recommend using it in the dektop, but if not possible, it also contain instruction on how to use the controls for touch screen devices.</p>
+				<p>
+					Have Fun!
+				</p>
+			</div>
+			<div class="project-link item item3">
+				<a class="link" href="" target="_blank"></a>
+			</div>
+			<div class="image item item4">
+				<img src="./Media/AE463_Pop_up_Image.jpg" />
+			</div>
+			<div class="exit-button item item5">
+				<div class="the-exit-button"><input type="button" class="exit" value="Exit"/></div>
+			</div>
+		</div>
+		
+
+			
+
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+            }
+        }
+        </script>
+        <script type="module" src="./main.js"></script>
+</body>
+</html>
